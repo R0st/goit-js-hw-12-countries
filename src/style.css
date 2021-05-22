@@ -1,0 +1,24 @@
+body {
+  background-color: #ffffff1f;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  background-image: url('./images/myFon.jpg');
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+div {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+
+  padding-top: 30px;
+  line-height: 2;
+}
+
+input {
+  height: 50px;
+  width: 200px;
+  padding-left: 5px;
+}
