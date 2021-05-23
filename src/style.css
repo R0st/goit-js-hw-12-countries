@@ -9,12 +9,7 @@ body {
 }
 
 div {
-  display: block;
-  /* justify-content: space-between; */
-  /* align-items: baseline; */
-  text-align: left;
   line-height: 2;
-  padding-right: 40px;
 }
 
 input {
@@ -23,8 +18,9 @@ input {
   padding-left: 5px;
   margin-bottom: 40px;
 }
-h2 {
-  text-align: center;
+
+p {
+  margin: 0;
 }
 ul {
   padding-left: 0;
@@ -35,6 +31,15 @@ li {
 .country {
   display: flex;
 }
-.country-content {
-  padding-top: 30px;
+.country-title {
+  text-align: center;
+  width: 40%;
+}
+span {
+  font-weight: 700;
+}
+.country-body {
+  display: block;
+  width: 250px;
+  margin-right: 40px;
 }

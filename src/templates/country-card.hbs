@@ -1,28 +1,62 @@
-{{#each this}}
+{{!-- {{#each this}}
 <div class="country">
-    
+
     <div class="country-body">
         <h2 class="country-title">
-             {{name}}
+            {{name}}
         </h2>
         <p class="country-text">
-            Capital: {{capital}} 
+            Capital: {{capital}}
         </p>
         <p class="country-text">
-            Population: {{population}}  
+            Population: {{population}}
         </p>
         <p class="country-text">
-            <ul >
+        <ul>
             Languages:
-                {{#each languages}}
-                <li class="country-languages">{{name}}, {{nativeName}}</li>
-                {{/each}}
-            </ul>
+            {{#each languages}}
+            <li class="country-languages">{{name}}, {{nativeName}}</li>
+            {{/each}}
+        </ul>
         </p>
     </div>
-    
+
     <div class="country-content">
         <img src={{flag}} alt={{name}} class="country-image" width="300">
     </div>
 </div>
+{{/each}} --}}
+
+{{#each this}}
+
+   <div>
+        <h2 class="country-title">
+            {{name}}
+        </h2>
+        <div class="country">
+            <div class="country-body">
+        
+                <p class="country-text">
+                    <span>Capital:</span> {{capital}}
+                </p>
+                <p class="country-text">
+                    <span>Population:</span> {{population}}
+                </p>
+                <p class="country-text">
+                <ul>
+                    <span>Languages:</span>
+                    {{#each languages}}
+                    <li class="country-languages">{{name}}, {{nativeName}}</li>
+                    {{/each}}
+                </ul>
+                </p>
+            </div>
+        
+            <div class="country-content">
+                <img src={{flag}} alt={{name}} class="country-image" width="250">
+            </div>
+        </div>
+   </div>
+    
+
 {{/each}}
