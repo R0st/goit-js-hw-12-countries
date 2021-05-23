@@ -1,11 +1,9 @@
 {{#each this}}
 <div class="country">
-    <div class="country-content">
-        <img src={{flag}} alt={{name}} class="country-image" width="200">
-    </div>
+    
     <div class="country-body">
         <h2 class="country-title">
-            Country: {{name}}
+             {{name}}
         </h2>
         <p class="country-text">
             Capital: {{capital}} 
@@ -13,12 +11,18 @@
         <p class="country-text">
             Population: {{population}}  
         </p>
-        <ul class="country-text">
+        <p class="country-text">
+            <ul >
             Languages:
-            {{#each languages}}
-            <li class="country-languages">{{name}}, {{nativeName}}</li>
-            {{/each}}
-        </ul>
+                {{#each languages}}
+                <li class="country-languages">{{name}}, {{nativeName}}</li>
+                {{/each}}
+            </ul>
+        </p>
+    </div>
+    
+    <div class="country-content">
+        <img src={{flag}} alt={{name}} class="country-image" width="300">
     </div>
 </div>
 {{/each}}
